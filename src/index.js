@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './App.css';
+import './components/navigation/dropdown/mobile/mobile.css';
+import './components/section/section.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
