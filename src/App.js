@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Banner from './Banner';
 import Header from './Header';
 import Home from './Home';
@@ -10,7 +10,11 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/home" element={<Home />} />
+          {/* La Home page est directement à la racine */}
+          <Route path="/" element={<Home />} />
+          
+          {/* Redirection des URLs non trouvées vers la Home */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>
     </div>
