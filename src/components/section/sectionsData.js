@@ -50,9 +50,9 @@ export const sectionsData = [
     id: 'powerwall',
     title: 'Experience Tesla',
     backgroundType: 'video',
-    backgroundSrc: '/powerwall.mp4',
+    backgroundSrc: '/commute.mp4',
     buttons: [
-      { label: 'Order Now', variant: 'primary' },
+      { label: 'Participate', variant: 'primary' },
       { label: 'Demo Drive', variant: 'secondary' }
     ]
   },
